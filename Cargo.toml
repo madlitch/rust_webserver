@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 futures = { version = "0.3.29", features = ["thread-pool"] }
 serde_json = "1.0.108"
+rusqlite = "0.30.0"
+serde = { version = "1.0.192", features = ["derive"] }

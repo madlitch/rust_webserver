@@ -1,28 +1,37 @@
+### Send GET request
+GET http://localhost:8888/
+Accept: application/json
 
 ### Send GET request
-GET http://localhost:8888/1
+GET http://localhost:8888/notes/1
 Accept: application/json
 
 ### Send POST request with json body
-POST http://localhost:8888
+POST http://localhost:8888/notes
 Content-Type: application/json
 
 {
-  "id": 999,
-  "value": "content",
-  "idiot": "true"
+  "title": "lorem 2023",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit nostrud exercitation ullamco laboris"
+}
+
+### Send POST request with json body
+POST http://localhost:8888/notes
+Content-Type: application/json
+
+{
+  "title": "deloruem 2024",
+  "content": "do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia"
 }
 
 ### Send PUT request with json body
-PUT http://localhost:8888
+PUT http://localhost:8888/notes/1
 Content-Type: application/json
 
 {
-  "id": 999,
-  "value": "content",
-  "idiot": "true"
+  "title": "updated lorem 2023",
+  "content": "ed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non"
 }
 
 ### Send DELETE request
-DELETE http://localhost:8888/1
-Accept: application/json
+DELETE http://localhost:8888/notes/1

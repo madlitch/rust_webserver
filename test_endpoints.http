@@ -1,0 +1,28 @@
+
+### Send GET request
+GET http://localhost:8888/1
+Accept: application/json
+
+### Send POST request with json body
+POST http://localhost:8888
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content",
+  "idiot": "true"
+}
+
+### Send PUT request with json body
+PUT http://localhost:8888
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content",
+  "idiot": "true"
+}
+
+### Send DELETE request
+DELETE http://localhost:8888/1
+Accept: application/json
